@@ -1,0 +1,18 @@
+const MULTIPLIER = 9 / 5;
+const FAHRENHEIT_OFFSET = 32;
+const KELVIN_OFFSET = 273.15;
+let celsius = 35;
+let fahrenheit = (celsius * MULTIPLIER) + FAHRENHEIT_OFFSET;
+let kelvin = celsius + KELVIN_OFFSET;
+console.log("----- Temperature Converter -----");
+console.log("Celsius: " + celsius + " C");
+console.log(celsius + " C = " + fahrenheit + " F");
+console.log(celsius + " C = " + kelvin + " K");
+celsius = 100;
+fahrenheit = (celsius * MULTIPLIER) + FAHRENHEIT_OFFSET;
+kelvin = celsius + KELVIN_OFFSET;
+console.log("----- After changing Celsius -----");
+console.log("Celsius: " + celsius + " C");
+console.log(celsius + " C = " + fahrenheit + " F");
+console.log(celsius + " C = " + kelvin + " K");
+console.log("Celsius is a " + typeof celsius);
